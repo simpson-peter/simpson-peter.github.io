@@ -1,102 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Peter Simpson | Resume</title>
+	<title>Peter Simpson</title>
+	<meta name="keywords" content="Peter, Simpson, USC, Computer Science, Philosophy">
+	<meta name="description" content="Peter Simpson is an honors student at the University of Southern California. He is studying philosophy and computer science. Find his contact information, github repos, projects, writing, and more here.">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-		body{
-			background-color: SteelBlue;
+		#intro{
+			margin-top: 20px;
+			margin-bottom: 20px;
 		}
-		p{
-			color: white;
-			margin: 0;
+		#introtxt{
+			float: left;
+			width: 500px;
 		}
-		h1{
-			text-align: center;
-			color:white;
-		}
-		h2{
-			color: white
-		}
-		div{
-			text-align: center;
-		}
-		li{
-			color: white;
-			margin: 0;
+		#headshot{
+			margin-left: 100px;
+			padding-bottom: 10px;
+			float: left;
+			width: 200px;
 		}
 		ul{
 			margin: 0;
 		}
+		p{
+			margin: 0;
+			padding: 0;
+		}
 	</style>
 </head>
 <body>
-	<h1>Peter Simpson</h1>
+	<div id = "header">
+		<div id="textbox">
+			<div id="menu-items">
+				<a href="home.html"><div id="title"><p>Peter Simpson</p></div></a>
+				<a href="home.html"><div class="item">Home</div></a>
+				<a href="resume.html"><div class="item">Resume</div></a>
+				<a href="projects.html"><div class="item">Projects</div></a>
+			</div> <!-- end of #menu-items -->
+		</div> <!-- end of #textbox -->
+	</div> <!-- end of #header -->
 
-	<div>
-		<p>835 W Jefferson Boulevard</p>
-		<p>Apt. 5192C</p>
-		<p>Los Angeles, CA 90089</p>
-		<p>(914) 321-7492</p>
-		<p><a href="mailto:pesimpso@usc.edu">pesimpso@usc.edu</a></p>		
-	</div>
+	<div id = "container">
+		
+		<div id = "content">
+			<div id = "intro">
+				<div id="introtxt">
+					<div class="contentbox">
+						<h4>Who Am I?</h4>
 
-	<h2>Objective</h2>
-	<p>I am an undergraduate seeking to explore the connections between philosophy and computer science.</p>
+						<p>I'm a sophomore honors student at the University of Southern California. I study philosophy and computer science. I have a longtime interest in technology and its applications, particularly as it applies to my lingustics research work.</p>
+					</div> <!-- end of .contentbox -->
 
-	<h2>Education</h2>
-	<p><strong>University of Southern California</strong></p>
-	<p>2018-Present</p>
-	<ul>
-		<li>B.A. in Philosophy (In Progress)</li>
-		<li>Minor in Computer Science</li>
-	</ul>
+					<div class="contentbox">
+						<h4>Skills</h4>
+						<ul>
+							<li>C++</li>
+							<li>HTML/CSS</li>
+							<li>Public Speaking</li>
+							<li>Effective Communicator</li>
+						</ul>
+					</div> <!-- end of .contentbox -->
 
-	<h2>Experience</h2>
+					<div class="contentbox">
+						<a href="resume.html"><h4>Resume</h4></a>
+					</div> <!-- end of .contentbox -->
 
-	<p><strong>Student Researcher</strong></p>
-	<p><i>University of Southern California</i></p>
-	<p>Summer 2018</p>
-	<ul>
-		<li>Collected data regarding endagered languages.</li>
-		<li>Developed apps in <strong>Flutter</strong> to assist language revilatilization.</li>
-	</ul>
+					<div class="contentbox">
+						<a href="projects.html"><h4>Projects</h4></a>
+					</div> <!-- end of .contentbox -->
 
-	<p> </p>
-	<p><strong>Intern</strong></p>
-	<p><i>Todd Snyder</i></p>
-	<p>2017-2019</p>
-	<ul>
-		<li>Assisted in the production of New York Men's Fashion Week Shows.</li>
-		<li>Serves as an assistant to a Senior Designer.</li>
-	</ul>
+					<div class="contentbox">
+						<h4>Contact Me</h4>
+						Email: <a href="mailto:simpson.petere@gmail.com">simpson.petere@gmail.com</a>
+					</div> <!-- end of .contentbox -->
+				</div> <!-- end of #introtxt -->
 
-	<p> </p>
-	<p><strong>Research Assistant</strong></p>
-	<p><i>New York University Neuroscience and Education Lab</i></p>
-	<p>2016-2018</p>
-	<ul>
-		<li>Conducted research on language aquistion in infants.</li>
-		<li>Assisted graduate students with research.</li>
-	</ul>
 
-	<h2>Skills</h2>
-	<p><strong>Programming Languages</strong></p>
-	<ul>
-		<li>C++ (Beginner)</li>
-	</ul>
+				<img id="headshot" src="img/headshot.jpg" alt="Peter Simpson">
 
-	<p><strong>Cuisines</strong></p>
-	<ul>
-		<li>Barbeque</li>
-		<li>Chinese</li>
-		<li>Italian</li>
-	</ul>
+				<div class="clearfloat"></div>
+				
+			</div> <!-- end of #intro -->
 
-	<p><strong>Interpersonal Skills</strong></p>
-	<ul>
-		<li>Strong public speaker</li>
-		<li>Effective writer and communicator</li>
-		<li>Demonstrated record of leadership</li>
-	</ul>
+			<div class = "bar"></div>
+
+		</div> <!-- end of #content -->
+
+		<div class="footer">
+			<div class="footertxt">Created by Peter Simpson</div>
+		</div>
+
+	</div> <!-- end of #container -->
 </body>
 </html>
