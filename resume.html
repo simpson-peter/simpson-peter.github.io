@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peter Simpson</title>
+	<meta name="keywords" content="Peter, Simpson, USC, Computer Science, Philosophy, Resume">
+	<meta name="description" content="Find Peter Simpson's resume here. Peter Simpson is an honors student at the University of Southern California. He has skills including C++, HTML, and CSS, and has utilized them in academic research settings at both NYU and USC.">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		input{
+			display: none;
+		}
+		label{
+			color: white;
+			position: relative;
+			margin-top: 20px;
+			font-size: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			background-color: black;
+			color: #FAF9F5;
+			padding-left: 5px;
+			transition: ease 0.5s;
+		}
+		label:after{
+			position: absolute;
+			right: 10px;
+			content:'+';
+		}
+		input:checked +label:after{
+			content:'-';
+		}
+		.dropdown-content{
+			padding-bottom: 10px;
+			background-color: #FAF9F5;
+			color: black;
+		}
+		input + label + .dropdown-content{
+			display: none;
+		}
+		input:checked + label + .dropdown-content{
+			display: block;
+		}
+		#education-text{
+			width: 580px;
+			padding-right: 20px;
+			float: left;
+		}
+		#education-image{
+			padding-top: 10px;
+			width: 200px;
+			float: left;
+		}
+		#education-image img{
+			width: 200px;
+			height: 100%;
+		}
+		.resume-title{
+			font-size: 18px;
+			padding-top: 10px;
+		}
+		li{
+			margin-top: 2.5px;
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id = "header">
+		<div id="textbox">
+			<div id="menu-items">
+				<a href="index.html"><div id="title"><p>Peter Simpson</p></div></a>
+				<a href="index.html"><div class="item">Home</div></a>
+				<a href="resume.html"><div class="item">Resume</div></a>
+				<a href="projects.html"><div class="item">Projects</div></a>
+			</div> <!-- end of #menu-items -->
+		</div> <!-- end of #textbox -->
+	</div> <!-- end of #header -->
+
+	<div id = "container">
+		
+		<div id = "content">
+			<input type="checkbox" id="education-box"/>
+			<label for="education-box">Education</label>
+
+			<div id="education-content" class="dropdown-content">
+
+				<div id="education-text">
+					<div class="resume-title"><strong>University of Southern California</strong></div>
+					<ul>
+						<li>2018 - Present</li>
+						<li>GPA: 3.96</li>
+						<li>Philosophy Major</li>
+						<li>Computer Science Minor</li>
+						<li>Selected for the Thematic Option Honors Program</li>
+					</ul>
+
+					<div class="resume-title"><strong>Mamaroneck High School</strong></div>
+					<ul>
+						<li>2014-2018</li>
+					</ul>
+				</div> <!-- end of #education-text -->
+
+				<div class="clearfloat"></div>
+			</div> <!-- end of #education-content -->
+
+
+
+			<input type="checkbox" id="experience-box"/>
+			<label for="experience-box">Experience</label>
+
+			<div id="experience-content" class="dropdown-content">
+				<div class="resume-title"><strong>Provost's Undergraduate Research Fellow (2020), Research Assistant (2019)</strong></div>
+				<i>University of Southern California, 2019 - Present</i>
+				<ul>
+					<li>Recieved a funded research fellowship to develop mobile applications to help preserve endangered languages.</li>
+					<li>Performed field research in Italy and utilized new computational techniques in documenting an endangered language.</li>
+				</ul>
+
+				<div class="resume-title"><strong>Vice President</strong></div>
+				<i>Pi Kappa Alpha Fraternity, University of Southern California, 2020 - Present</i>
+				<ul>
+					<li>Oversee the growth and day-to-day operations of one of the nation's largest chapters, with over 150 current members.</li>
+					<li>Responsible for communications and events involving the chapter, national fraternity, alumni, parents, and operations partners.</li>
+				</ul>
+
+				<div class="resume-title"><strong>Assistant to a Senior Designer</strong></div>
+				<i>Todd Snyder Menswear, 2017-2019</i>
+				<ul>
+					<li>Helped put on two New York Men’s Fashion Week shows.</li>
+					<li>Organized and maintained company production inventory.</li>
+				</ul>
+
+				<div class="resume-title"><strong>Research Assistant</strong></div>
+				<i>New York University Neuroscience and Education Lab, 2016-2017</i>
+				<ul>
+					<li>Conducted award-winning independent cognitive science research into language acquisition among infants in New York..</li>
+				</ul>
+			</div> <!-- end of #experience-content -->
+
+			
+
+			<input type="checkbox" id="skills-box"/>
+			<label for="skills-box">Skills</label>
+
+			<div id="skills-content" class="dropdown-content">
+				<div class="resume-title"><strong>Techincal Skills</strong></div>
+				<ul>
+					<li>C++</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Microsoft Office</li>
+					<li>SPSS</li>
+				</ul>
+
+				<div class="resume-title"><strong>Interpersonal Skills</strong></div>
+				<ul>
+					<li>Strong Public Speaker</li>
+					<li>Concise and Effective Writer</li>
+					<li>Proven Leader</li>
+				</ul>
+			</div> <!-- end of #skills-content -->
+
+		</div> <!-- end of #content -->
+
+		<div class="footer">
+			<div class="footertxt">Created by Peter Simpson</div>
+		</div>
+
+	</div> <!-- end of #container -->
+</body>
+</html>
