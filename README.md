@@ -1,4 +1,4 @@
-## Peter Simpson's Personal Website
+## Peter Simpson's Website
 
 This is the repo for my personal website, hosted on Github Pages. All HTML and CSS is original.
 
