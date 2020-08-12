@@ -20,12 +20,69 @@
 			float: left;
 			width: 175px;
 		}
-		#mailicon{
-			
+		#iconlink{
+			text-decoration: none;
 		}
 		p{
 			margin: 0;
 			padding: 0;
+		}
+		input{
+			display: none;
+		}
+		label{
+			color: white;
+			position: relative;
+			margin-top: 20px;
+			font-size: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			display: block;
+			background-color: black;
+			color: #FAF9F5;
+			padding-left: 5px;
+			transition: ease 0.5s;
+		}
+		label:after{
+			position: absolute;
+			right: 10px;
+			content:'-';
+		}
+		input:checked +label:after{
+			content:'+';
+		}
+		.dropdown-content{
+			padding-bottom: 10px;
+			background-color: #FAF9F5;
+			color: black;
+		}
+		input + label + .dropdown-content{
+			
+		}
+		input:checked + label + .dropdown-content{
+			display: none;
+		}
+		#education-text{
+			width: 580px;
+			padding-right: 20px;
+			float: left;
+		}
+		#education-image{
+			padding-top: 10px;
+			width: 200px;
+			float: left;
+		}
+		#education-image img{
+			width: 200px;
+			height: 100%;
+		}
+		.resume-title{
+			font-size: 18px;
+			padding-top: 10px;
+		}
+		li{
+			margin-top: 2.5px;
+			padding: 0px;
 		}
 	</style>
 	<script src="https://kit.fontawesome.com/963282c39d.js" crossorigin="anonymous"></script>
@@ -50,19 +107,22 @@
 					<div class="contentbox">
 						<h4>Who Am I?</h4>
 
-						<p>I'm a junior honors student at the University of Southern California. I study philosophy and computer science. I have a longtime interest in technology and its applications, particularly as it intersects with my lingustics research work.</p>
+						<p>I'm a junior honors student at the University of Southern California. I study philosophy and computer science.</p>
+
+						<p>&nbsp;</p>
+						<h4>What Am I Up To Right Now?</h4>
+						<p>I'm a funded research fellow at the University of Southern California. I'm researching and developing mobile apps to promote endangered language revitilization.</p>
 					</div> <!-- end of .contentbox -->
 
 					<div class="contentbox">
-						<a href="mailto:simpson.petere@gmail.com">
-							<i class="far fa-envelope" id="mailicon"></i>
+						<a href="mailto:simpson.petere@gmail.com" id="iconlink">
+							<i class="far fa-envelope"></i>
 						</a>
 						
 						<a href="mailto:simpson.petere@gmail.com">simpson.petere@gmail.com</a>
 					</div> <!-- end of .contentbox -->
 				</div> <!-- end of #introtxt -->
-
-
+				
 				<img id="headshot" src="img/headshot.jpg" alt="Peter Simpson">
 
 				<div class="clearfloat"></div>
@@ -72,6 +132,87 @@
 			<div class = "bar"></div>
 
 		</div> <!-- end of #content -->
+
+		<!-- BEGIN RESUME -->
+
+		<div id = "content">
+			<input type="checkbox" id="education-box"/>
+			<label for="education-box">Education</label>
+
+			<div id="education-content" class="dropdown-content">
+
+				<div id="education-text">
+					<div class="resume-title"><strong>University of Southern California</strong></div>
+					<ul>
+						<li>2018 - Present</li>
+						<li>GPA: 3.97</li>
+						<li>Philosophy and Computer Science Student</li>
+						<li>Selected for the Thematic Option Honors Program</li>
+					</ul>
+
+					<div class="resume-title"><strong>Mamaroneck High School</strong></div>
+					<ul>
+						<li>2014-2018</li>
+					</ul>
+				</div> <!-- end of #education-text -->
+
+				<div class="clearfloat"></div>
+			</div> <!-- end of #education-content -->
+
+			<input type="checkbox" id="skills-box"/>
+			<label for="skills-box">Skills</label>
+
+			<div id="skills-content" class="dropdown-content">
+				<div class="resume-title"><strong>Languages</strong></div>
+				<ul>
+					<li>C++, Java, Dart, SQL, HTML/CSS</li>
+				</ul>
+
+				<div class="resume-title"><strong>Tools and Frameworks</strong></div>
+				<ul>
+					<li>Flutter, MySQL, Git, Figma (Mockup Tool), Adobe Photoshop, Microsoft Office</li>
+				</ul>
+
+				<div class="resume-title"><strong>Topics Studied</strong></div>
+				<ul>
+					<li>Data structures, web development, web servers and networking, database management, art and visual design</li>
+				</ul>
+			</div> <!-- end of #skills-content -->
+
+			<input type="checkbox" id="experience-box"/>
+			<label for="experience-box">Experience</label>
+
+			<div id="experience-content" class="dropdown-content">
+				<div class="resume-title"><strong>Provost's Undergraduate Research Fellow</strong></div>
+				<i>University of Southern California, 2020 - Present</i>
+				<ul>
+					<li><a href="projects.html">See my work on my projects page.</a></li>
+					<li><b>Invited to speak to over 5,000 attendees at Byteconf Flutter 2020 about my work.</b></li>
+					<li>Recipient of a funded research fellowship to develop mobile applications to help preserve endangered languages.</li>
+					<li>Performed field research in Italy and utilized new computational techniques in documenting an endangered language.</li>
+				</ul> 
+
+				<div class="resume-title"><strong>Assistant to a Senior Designer</strong></div>
+				<i>Todd Snyder Menswear, 2017-2019</i>
+				<ul>
+					<li>Helped put on two New York Men’s Fashion Week shows.</li>
+					<li>Organized and maintained company production inventory.</li>
+				</ul>
+
+				<div class="resume-title"><strong>Research Assistant</strong></div>
+				<i>New York University Neuroscience and Education Lab, 2016-2017</i>
+				<ul>
+					<li>Conducted award-winning independent cognitive science research into language acquisition among infants in New York..</li>
+					<li>Responsible for reviewing and parsing thousands of hours of audio data used in published work across the lab.</li>
+				</ul>
+			</div> <!-- end of #experience-content -->
+		</div> <!-- end of #content -->
+
+		<!-- END RESUME -->
+
+		<!-- BEGIN PROJECTS -->
+
+		<!-- END RESUME -->
 
 		<div class="footer">
 			<div class="footertxt">Created by Peter Simpson</div>
