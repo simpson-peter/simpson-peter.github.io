@@ -12,15 +12,16 @@
 		}
 		#introtxt{
 			float: left;
-			width: 525px;
+			width: 590px;
 		}
 		#headshot{
-			margin-left: 100px;
-			padding-bottom: 10px;
+			margin-left: 30px;
+			margin-bottom: 6px;
 			float: left;
 			width: 175px;
+			border: 2px solid;
 		}
-		#iconlink{
+		.iconlink{
 			text-decoration: none;
 		}
 		p{
@@ -41,7 +42,6 @@
 			background-color: black;
 			color: #FAF9F5;
 			padding-left: 5px;
-			transition: ease 0.5s;
 		}
 		label:after{
 			position: absolute;
@@ -50,11 +50,6 @@
 		}
 		input:checked +label:after{
 			content:'+';
-		}
-		.dropdown-content{
-			padding-bottom: 10px;
-			background-color: #FAF9F5;
-			color: black;
 		}
 		input + label + .dropdown-content{
 			
@@ -84,6 +79,73 @@
 			margin-top: 2.5px;
 			padding: 0px;
 		}
+		.col{
+			width: 390px;
+			float: left;
+		}
+		.colHeader{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-size: 25px;
+			text-align: center;
+		}
+		#leftcol{
+			padding-right: 10px;
+		}
+		#rightcol{
+			padding-left: 10px;
+		}
+		iframe{
+			margin-top: 10px;
+			width: 370px;
+			height: 207px;
+		}
+		.contentTitle{
+			color: black;
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.contentTitle a{
+			color: black;
+			text-decoration: none;
+		}
+		.contentDescription a{
+			color:black;
+		}
+		#github img{
+			width: 50px;
+			height: 100%;
+			float: left;
+		}
+		#github .contentTitle{
+			padding-top: 13px;
+		}
+		audio{
+			margin-top: 20px;
+			margin-left: 35px;
+		}
+		#hexImage{
+			margin-left: 85px;
+			width: 200px;
+			height: 100%;
+		}
+		.snekImg{
+			margin-left: 25px;
+			width: 150px;
+			height: 100%;
+			float: left;
+		}
+		.imgCaption{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		#project-header{
+			margin-bottom: 20px;
+		}
+		#githubTitle{
+			text-align: center;
+		}
 	</style>
 	<script src="https://kit.fontawesome.com/963282c39d.js" crossorigin="anonymous"></script>
 </head>
@@ -93,49 +155,153 @@
 			<div id="menu-items">
 				<a href="index.html"><div id="title"><p>Peter Simpson</p></div></a>
 				<a href="index.html"><div class="item">Home</div></a>
-				<a href="resume.html"><div class="item">Resume</div></a>
-				<a href="projects.html"><div class="item">Projects</div></a>
+				<a href="#project-header"><div class="item">Projects</div></a>
+				<a href="#resume-header"><div class="item">Resume</div></a>
 			</div> <!-- end of #menu-items -->
 		</div> <!-- end of #textbox -->
 	</div> <!-- end of #header -->
 
 	<div id = "container">
+			<div id = "content">
+				<div id = "intro">
+					<div id="introtxt">
+						<div class="contentbox">
+							<h4>Who Am I?</h4>
+
+							<p>I'm a junior honors student at the University of Southern California. I study philosophy and computer science.</p>
+
+							<p>&nbsp;</p>
+							<h4>What Am I Up To Right Now?</h4>
+							<p>I'm a funded research fellow at the University of Southern California. I'm researching and developing mobile apps to promote endangered language revitilization.</p>
+						</div> <!-- end of .contentbox -->
+
+						<div class="contentbox">
+							<a href="mailto:simpson.petere@gmail.com" class="iconlink">
+								<i class="far fa-envelope"></i>
+							</a>
+							
+							<a href="mailto:simpson.petere@gmail.com" class="contactCaption">simpson.petere@gmail.com</a>
+
+							<br>
+
+							<a href="https://github.com/simpson-peter" class="iconlink">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="https://github.com/simpson-peter" class="contactCaption">
+								Check out my Github!
+							</a>
+						</div> <!-- end of .contentbox -->
+					</div> <!-- end of #introtxt -->
+					
+					<img id="headshot" src="img/headshot.jpg" alt="Peter Simpson">
+
+					<div class="clearfloat"></div>
+					
+				</div> <!-- end of #intro -->
+
+			</div> <!-- end of #content -->
+
+		<!-- BEGIN PROJECTS -->
 		
-		<div id = "content">
-			<div id = "intro">
-				<div id="introtxt">
-					<div class="contentbox">
-						<h4>Who Am I?</h4>
 
-						<p>I'm a junior honors student at the University of Southern California. I study philosophy and computer science.</p>
+		<div id="content">
+			<div class="section-header" id="project-header">Projects</div>
+			<div class="col" id="leftcol">
 
-						<p>&nbsp;</p>
-						<h4>What Am I Up To Right Now?</h4>
-						<p>I'm a funded research fellow at the University of Southern California. I'm researching and developing mobile apps to promote endangered language revitilization.</p>
-					</div> <!-- end of .contentbox -->
+				<div class="d-contentbox">
+					<div class="contentTitle"><a href="https://github.com/simpson-peter/LatinSqSolver"><strong>Latin Square Solver</strong></a></div>
 
-					<div class="contentbox">
-						<a href="mailto:simpson.petere@gmail.com" id="iconlink">
-							<i class="far fa-envelope"></i>
-						</a>
+					<div class="contentDescription">
+
+						<img id="hexImage" src="img/hex_visualization.png" alt="Latin Square Visualization">
+
+						<div class="clearfloat"></div>
+
+						<div class="imgCaption"><i>Visualization of a Latin square generated by my program from a set of hex codes.</i></div>
+
+							<a href="https://github.com/simpson-peter/LatinSqSolver" class="iconlink">
+								<i class="fab fa-github"></i>
+							</a>
+							<strong><a href="https://github.com/simpson-peter/LatinSqSolver">Repository Link</a></strong>
+
+						<p></p>
+
+						This is a templated, efficient, implementation of a custom-sizeable <a href="https://en.wikipedia.org/wiki/Latin_square">Latin square</a> solver that I created in C++. 
+						<p></p>
+						The Latin square has applications to cryptography, statistics, and telecommunications, but I just made this for fun. I implemented the solver as a backtracking algorithim for increased efficiency in comparison to an all-combinations solution.
 						
-						<a href="mailto:simpson.petere@gmail.com">simpson.petere@gmail.com</a>
-					</div> <!-- end of .contentbox -->
-				</div> <!-- end of #introtxt -->
-				
-				<img id="headshot" src="img/headshot.jpg" alt="Peter Simpson">
+					</div><!-- end of .contentDescription -->
+				</div> <!-- end of .d-contentbox -->
 
-				<div class="clearfloat"></div>
-				
-			</div> <!-- end of #intro -->
+				<div class="d-contentbox">
+					<div class="contentTitle"><strong>"Infant Media Exposure"</strong></div>
 
-			<div class = "bar"></div>
+					<div class="contentDescription">
+						<strong><a href="projects/simpson_media_exposure.pdf" target="_blank">Download Here</a></strong>
+						<p></p>
+						This award-winning paper presents my primary results from two years spent conducting original research at New York University's Neuroscience and Education Lab.
+						<p></p>
+						This paper shed light on serious inaccuracies in the widely-used LENA research tool, and presented my findings relating to the relationship between media exposure and sleep in infants.
+					</div> <!-- end of .contentDescription -->
+				</div> <!-- end of .d-contentbox -->
+			</div> <!-- end of #leftcol -->
 
-		</div> <!-- end of #content -->
+			<div class="col" id="rightcol">
+
+				<div class="d-contentbox">
+					<div class="contentTitle"><a href="https://github.com/simpson-peter/Snek2D"><strong>Snek 2D</strong></a></div>
+
+					<div class="contentDescription">
+
+						<img class="snekImg" src="img/snek_screenshots/snek_bw0_mini.png" alt="Snek 2D Screencap">
+						<img class="snekImg" src="img/snek_screenshots/snek_groovy0_mini.png" alt="Snek 2D Screencap">
+
+						<div class="clearfloat"></div>
+
+						<div class="imgCaption"><i>Screenshots from Snek 2D.</i></div>
+
+
+						<a href="https://github.com/simpson-peter/Snek2D" class="iconlink">
+								<i class="fab fa-github"></i>
+						</a>
+						<strong><a href="https://github.com/simpson-peter/Snek2D">Repository Link</a></strong>
+
+						<p></p>
+
+						<a href="https://apps.apple.com/app/id1519035628" class="iconlink">
+							<i class="fab fa-app-store-ios"></i>
+						</a>
+						<strong><a href="https://apps.apple.com/app/id1519035628">Find Snek 2D on the App Store</a></strong>
+
+						<p></p>
+
+						This is a riff on the classic Snake game that I made for iOS and Android with Dart using the Flutter framework.
+
+						Check out groovy and turbo mode in the Settings menu for a new experience!		
+					</div><!-- end of .contentDescription -->
+				</div> <!-- end of .d-contentbox -->
+
+				<div class="d-contentbox">
+					<div class="contentTitle"><strong>"Reinforcing a Modal Account of Luck"</strong></div>
+
+					<div class="contentDescription">
+						<strong><a href="projects/simpson_reinforcing_modal_luck.pdf" target="_blank">Download Here</a></strong>
+						<p></p>
+						This is an academic philosophy paper presenting my original work on parsing concepts of "luck," building on the work of Duncan Pritchard and the critiques which he spawned.
+					</div>
+				</div> <!-- end of .d-contentbox -->
+
+			</div> <!-- end of #rightcol -->
+
+			<div class="clearfloat"></div>
+		</div> <!--- end of #content -->
+
+		<!-- END PROJECTS -->
 
 		<!-- BEGIN RESUME -->
 
 		<div id = "content">
+			<div class="section-header" id="resume-header">Resume</div>
 			<input type="checkbox" id="education-box"/>
 			<label for="education-box">Education</label>
 
@@ -186,7 +352,6 @@
 				<div class="resume-title"><strong>Provost's Undergraduate Research Fellow</strong></div>
 				<i>University of Southern California, 2020 - Present</i>
 				<ul>
-					<li><a href="projects.html">See my work on my projects page.</a></li>
 					<li><b>Invited to speak to over 5,000 attendees at Byteconf Flutter 2020 about my work.</b></li>
 					<li>Recipient of a funded research fellowship to develop mobile applications to help preserve endangered languages.</li>
 					<li>Performed field research in Italy and utilized new computational techniques in documenting an endangered language.</li>
@@ -207,10 +372,6 @@
 				</ul>
 			</div> <!-- end of #experience-content -->
 		</div> <!-- end of #content -->
-
-		<!-- END RESUME -->
-
-		<!-- BEGIN PROJECTS -->
 
 		<!-- END RESUME -->
 
