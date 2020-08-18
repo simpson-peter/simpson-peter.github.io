@@ -1,0 +1,3 @@
+[submodule "whats_my_app"]
+	path = whats_my_app
+	url = https://github.com/simpson-peter/whats_my_app.git
