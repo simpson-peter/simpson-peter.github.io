@@ -1,3 +1,6 @@
 [submodule "whats_my_app"]
 	path = whats_my_app
 	url = https://github.com/simpson-peter/whats_my_app.git
+[submodule "drum_machine"]
+	path = drum_machine
+	url = https://github.com/simpson-peter/drum_machine.git
