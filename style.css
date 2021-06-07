@@ -60,6 +60,12 @@ h4{
 	background-color: #FAF9F5;
 	width: 800px;
 }
+#drumImage{
+ 	display: block;
+ 	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
 #content h4{
 	margin: 0px;
 }
