@@ -4,3 +4,6 @@
 [submodule "drum_machine"]
 	path = drum_machine
 	url = https://github.com/simpson-peter/drum_machine.git
+[submodule "now_playing"]
+	path = now_playing
+	url = https://github.com/simpson-peter/now_playing.git
